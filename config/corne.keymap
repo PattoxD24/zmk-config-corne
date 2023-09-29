@@ -28,6 +28,22 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        CMDQ {
+            bindings = <&kp LG(Q)>;
+            key-positions = <1 3>;
+            layers = <0>;
+        };
+
+        CMDW {
+            bindings = <&kp LG(W)>;
+            key-positions = <2 4>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
