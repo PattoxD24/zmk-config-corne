@@ -49,13 +49,16 @@
             compatible = "zmk,behavior-macro";
             label = "TERMINAL";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_ALT &kp RIGHT_ALT &kp T &kp E &kp R &kp M &kp I &kp N &kp A &kp L &kp KP_ENTER>;
+            bindings =
+                <&kp RIGHT_ALT &kp RIGHT_ALT>,
+                <&macro_wait_time 200>,
+                <&kp T &kp E &kp R &kp M &kp I &kp N &kp A &kp L &kp ENTER>;
         };
         code: code {
             compatible = "zmk,behavior-macro";
             label = "CODE";
             #binding-cells = <0>;
-            bindings = <&kp C &kp O &kp D &kp E &kp SPACE &kp DOT &kp KP_ENTER>;
+            bindings = <&kp C &kp O &kp D &kp E &kp SPACE &kp DOT &kp ENTER>;
         };
     };
 
