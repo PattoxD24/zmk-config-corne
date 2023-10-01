@@ -89,7 +89,7 @@
 
             bindings = <
 &trans     &trans  &kp C_BRIGHTNESS_INC  &kp C_PP    &kp K_MUTE        &kp LS(LC(LG(NUMBER_4)))    &kp PG_UP          &kp HOME       &kp UP     &kp END    &kp N0             &kp BSPC
-&trans     &trans  &kp C_BRIGHTNESS_DEC  &kp C_NEXT  &kp C_VOLUME_UP   &kp NUBS                    &kp PAGE_DOWN      &kp LEFT       &kp DOWN   &kp RIGHT  &kp LS(C_AL_LOCK)  &kp C_SLEEP
+&trans     &trans  &kp C_BRIGHTNESS_DEC  &kp C_NEXT  &kp C_VOLUME_UP   &kp NUBS                    &kp PAGE_DOWN      &kp LEFT       &kp DOWN   &kp RIGHT  &kp LS(C_AL_LOCK)  &kp C_SLEEP_MODE
 &kp LSHFT  &trans  &trans                &kp C_PREV  &kp C_VOL_DN      &kp LEFT_BRACKET            &kp RIGHT_BRACKET  &trans         &terminal  &code      &trans             &trans
                                          &kp LGUI    &kp LEFT_CONTROL  &trans                      &trans             &kp BACKSPACE  &kp RALT
             >;
