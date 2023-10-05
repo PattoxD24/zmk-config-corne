@@ -14,33 +14,25 @@
             compatible = "zmk,behavior-tap-dance";
             label = "ONNUMPAD";
             #binding-cells = <0>;
-            bindings =
-                <&kp Y>,
-                <&to 4>;
+            bindings = <&kp Y>, <&to 4>;
         };
         offNumpad: offNumpad {
             compatible = "zmk,behavior-tap-dance";
             label = "OFFNUMPAD";
             #binding-cells = <0>;
-            bindings =
-                <&kp Y>,
-                <&to 0>;
+            bindings = <&kp Y>, <&to 0>;
         };
         reload: reload {
             compatible = "zmk,behavior-tap-dance";
             label = "RELOAD";
             #binding-cells = <0>;
-            bindings =
-                <&kp F5>,
-                <&kp LG(LS(R))>;
+            bindings = <&kp F5>, <&kp LG(LS(R))>;
         };
         esc_caps: esc_caps {
             compatible = "zmk,behavior-tap-dance";
             label = "ESC_CAPS";
             #binding-cells = <0>;
-            bindings =
-                <&kp ESC>,
-                <&caps_word>;
+            bindings = <&kp ESC>, <&caps_word>;
         };
     };
 
@@ -57,6 +49,11 @@
             bindings = <&kp LG(W)>;
             key-positions = <2 4>;
             layers = <0>;
+        };
+
+        Globe_key {
+            bindings = <&kp GLOBE>;
+            key-positions = <37 24>;
         };
     };
 
