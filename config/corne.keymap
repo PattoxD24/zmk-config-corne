@@ -34,6 +34,22 @@
             #binding-cells = <0>;
             bindings = <&kp ESC>, <&caps_word>;
         };
+        bspc_del: bspc_del {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BSPC_DEL";
+            bindings = <&kp BACKSPACE>, <&kp DEL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+        ctrl_globe: ctrl_globe {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CTRL_GLOBE";
+            bindings = <&kp LEFT_CONTROL>, <&kp GLOBE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     combos {
@@ -91,10 +107,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R             &kp T          &onNumpad    &kp U          &kp I      &kp O    &kp P     &kp BACKSLASH
-&esc_caps  &kp A  &kp S  &kp D     &kp F             &kp G          &kp H        &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V             &kp B          &kp N        &kp M          &kp COMMA  &kp DOT  &kp FSLH  &mt RIGHT_SHIFT KP_EQUAL
-                         &kp LGUI  &kp LEFT_CONTROL  &lt 2 SPACE    &lt 1 ENTER  &kp BACKSPACE  &kp RALT
+&kp TAB    &kp Q  &kp W  &kp E     &kp R        &kp T          &onNumpad    &kp U      &kp I      &kp O    &kp P     &kp BACKSLASH
+&esc_caps  &kp A  &kp S  &kp D     &kp F        &kp G          &kp H        &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V        &kp B          &kp N        &kp M      &kp COMMA  &kp DOT  &kp FSLH  &mt RIGHT_SHIFT KP_EQUAL
+                         &kp LGUI  &ctrl_globe  &lt 2 SPACE    &lt 1 ENTER  &bspc_del  &kp RALT
             >;
         };
 
