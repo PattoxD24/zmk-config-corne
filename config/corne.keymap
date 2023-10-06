@@ -55,6 +55,11 @@
             bindings = <&kp GLOBE>;
             key-positions = <37 24>;
         };
+
+        newTab {
+            bindings = <&kp LG(T)>;
+            key-positions = <1 5>;
+        };
     };
 
     macros {
