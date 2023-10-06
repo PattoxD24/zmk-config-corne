@@ -45,7 +45,9 @@
         ctrl_globe: ctrl_globe {
             compatible = "zmk,behavior-mod-morph";
             label = "CTRL_GLOBE";
-            bindings = <&kp LEFT_CONTROL>, <&kp GLOBE>;
+            bindings =
+                <&kp LEFT_CONTROL>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
