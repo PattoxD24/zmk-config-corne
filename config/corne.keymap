@@ -52,23 +52,6 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
-        battery_left: battery_left {
-            compatible = "zmk,behavior-battery-status";
-            label = "Battery Left";
-            binding-cells = <0>;
-        };
-
-        battery_right: battery_right {
-            compatible = "zmk,behavior-battery-status";
-            label = "Battery Right";
-            binding-cells = <0>;
-        };
-
-        bt_status: bt_status {
-            compatible = "zmk,behavior-bt-status";
-            label = "Bluetooth Status";
-            binding-cells = <0>;
-        };
     };
 
     combos {
