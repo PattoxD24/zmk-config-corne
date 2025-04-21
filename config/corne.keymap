@@ -56,22 +56,18 @@
 
         // Configuración personalizada para el movimiento del mouse
         mmv_custom: behavior_mouse_move {
-            compatible = "zmk,behavior-input-two-axis";
+            compatible = "zmk,behavior-mouse-move";
             label = "MOUSE_MOVE_CUSTOM";
             #binding-cells = <1>;
-            x-input-code = <INPUT_REL_X>;
-            y-input-code = <INPUT_REL_Y>;
             time-to-max-speed-ms = <500>;
             acceleration-exponent = <1>;
         };
 
         // Configuración personalizada para el scroll
         msc_custom: behavior_mouse_scroll {
-            compatible = "zmk,behavior-input-two-axis";
+            compatible = "zmk,behavior-mouse-scroll";
             label = "MOUSE_SCROLL_CUSTOM";
             #binding-cells = <1>;
-            x-input-code = <INPUT_REL_HWHEEL>;
-            y-input-code = <INPUT_REL_WHEEL>;
             time-to-max-speed-ms = <300>;
             acceleration-exponent = <1>;
         };
@@ -189,9 +185,9 @@
 
         MOUSE {
             bindings = <
-&trans     &trans        &trans           &trans            &trans           &trans        &trans  &mkp MB2       &mmv_custom MOVE_UP    &mkp MB1        &msc_custom SCROLL_UP    &trans
-&trans     &trans        &trans           &trans            &trans           &trans        &trans  &mmv_custom MOVE_LEFT  &mmv_custom MOVE_DOWN  &mmv_custom MOVE_RIGHT  &msc_custom SCROLL_DOWN  &trans
-&trans     &kp LCTRL     &kp LALT         &kp LGUI          &trans           &trans        &trans  &mkp MB3       &mkp MB4           &mkp MB5        &trans                 &trans
+&trans     &trans        &trans           &trans            &trans           &trans        &trans  &mkp MB2  &mmv MOVE_UP    &mkp MB1  &mwh SCROLL_UP    &trans
+&trans     &trans        &trans           &trans            &trans           &trans        &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mwh SCROLL_DOWN  &trans
+&trans     &kp LCTRL     &kp LALT         &kp LGUI          &trans           &trans        &trans  &mkp MB3  &mkp MB4  &mkp MB5  &trans  &trans
                                          &trans            &trans           &trans        &mkp MB1  &mkp MB2  &trans
             >;
         };
